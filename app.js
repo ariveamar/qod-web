@@ -22,7 +22,7 @@ app.use(express.json());
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
-app.set('port', process.env.PORT || 8081);
+app.set('port', process.env.PORT || 8080);
 
 app.enable('trust proxy'); 
 
