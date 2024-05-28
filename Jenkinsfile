@@ -11,7 +11,7 @@ pipeline {
             steps {
               sh '''
                   #oc start-build --from-build=<build_name>
-                  oc start-build --from-dir=./deployment/buildconfig.yaml
+                  oc start-build qod-web --from-dir=./deployment/buildconfig.yaml
               '''
             }
         }
