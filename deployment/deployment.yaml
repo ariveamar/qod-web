@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: qod-web
-          image: ibmicpcoc/qod-web
+          image: quay.io/arief_amarullah/qod-ui:latest
           imagePullPolicy: Always
           ports:
             - name: http
