@@ -2,11 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
-            steps {
-                echo 'Hello World'
-            }
-        }
         stage("Checkout") {
             steps {
                 checkout scm
@@ -20,7 +15,7 @@ pipeline {
               '''
             }
         }
-        stage("Docker Build") {
+        stage("Create Deployment") {
             steps {
               sh '''
                   oc apply -f ./deployment/deployment.yaml
@@ -42,4 +37,3 @@ pipeline {
             }
         }
     }
-}
