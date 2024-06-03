@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: qod-web
-          image: quay.io/arief_amarullah/qod-ui:latest
+          image: quay.io/arief_amarullah/qod-web:latest
           imagePullPolicy: Always
           ports:
             - name: http
