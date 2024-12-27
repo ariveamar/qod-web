@@ -3,7 +3,7 @@ FROM registry.redhat.io/rhel8/nodejs-16
 ENV APP_ROOT=/opt/app-root
 
 WORKDIR $APP_ROOT
-
+### TESTING 
 COPY app.js .
 COPY LICENSE .
 COPY package.json .
